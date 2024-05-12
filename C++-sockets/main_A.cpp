@@ -21,8 +21,10 @@ int main()
 	// specifying the address
 	sockaddr_in serverAddress;
 	serverAddress.sin_family = AF_INET;
-	serverAddress.sin_port = htons(8080);
+	serverAddress.sin_port = htons(8090);
+    std::cout<<"port is "<<serverAddress.sin_port<<std::endl;
 	serverAddress.sin_addr.s_addr = INADDR_ANY;
+    std::cout<<"address is "<<serverAddress.sin_addr.s_addr<<std::endl;
 
 	// binding socket.
 	bind(serverSocket, (struct sockaddr*)&serverAddress, sizeof(serverAddress));

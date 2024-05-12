@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.15)
+project("socket_example")
+set(CMAKE_BUILD_TYPE DEBUG)
+add_executable(ProcessA main_A.cpp)
+add_executable(ProcessB main_B.cpp)

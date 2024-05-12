@@ -5,12 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "socket_client",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/python-c++-sockets/main_B.py",
+            "console": "integratedTerminal",
+            // "args": "${command:pickArgs}"
+            "args": ""
+        },
+        {
             "name": "A",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/ProcessA",
-            "args": [
-            ],
+            "program": "${workspaceFolder}/C++-sockets/build/ProcessA",
+            "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
@@ -33,9 +41,8 @@
             "name": "B",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/ProcessB",
-            "args": [
-            ],
+            "program": "${workspaceFolder}/C++-sockets/build/ProcessB",
+            "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
@@ -54,6 +61,5 @@
                 }
             ]
         }
-
     ]
 }
